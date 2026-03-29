@@ -18,15 +18,17 @@ const packagePromise = packages();
 
 function App() {
 
+  const [cartItems, setCartItems] = useState([]);
+
 
   return (
     <>
-      <NavBar />
+      <NavBar cartItems={cartItems} />
       <Banner />
       <Info />
 
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-        <ToolCards packagePromise={packagePromise} />
+        <ToolCards packagePromise={packagePromise} cartItems={cartItems} setCartItems={setCartItems} />
       </Suspense>
 
 

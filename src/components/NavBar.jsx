@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../assets/DigiTools.svg';
 import { LuShoppingCart } from "react-icons/lu";
 
-const NavBar = () => {
+const NavBar = ({ cartItems }) => {
     return (
         <div>
             <div className="navbar bg-base-100 shadow-sm">
@@ -35,7 +35,12 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className='btn btn-ghost'><LuShoppingCart /></a>
+                    <a className='btn btn-ghost relative'>
+                        <div className="absolute top-0 right-0 bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                            {cartItems.length}
+                        </div>
+                        <LuShoppingCart />
+                    </a>
                     <a className='btn btn-ghost'> Login</a>
                     <a className="btn btn-primary rounded-full font-semibold">Get Started</a>
                 </div>

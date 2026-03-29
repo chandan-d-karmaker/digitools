@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import PackageCard from './PackageCard';
 
-const DisplayCards = ({ packagePromise }) => {
+const DisplayCards = ({ packagePromise, cartItems, setCartItems }) => {
 
     const packageData = use(packagePromise);
     return (
@@ -9,7 +9,7 @@ const DisplayCards = ({ packagePromise }) => {
             {/* display cards */}
             
                 {
-                    packageData.map(pkg => <PackageCard key={pkg.id} pkg={pkg} />)
+                    packageData.map(pkg => <PackageCard key={pkg.id} pkg={pkg} cartItems={cartItems} setCartItems={setCartItems} />)
                 }
             
         </div>

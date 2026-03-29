@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaCheck } from "react-icons/fa";
 
-const PackageCard = ({ pkg }) => {
+const PackageCard = ({ pkg, cartItems, setCartItems }) => {
+
+    const [selected, setSelected] = useState(false);
+
+    const handleAddToCart = () => {
+        if (!selected) {
+            setCartItems([...cartItems, pkg]);
+            setSelected(true);
+        }
+    };
+
+
     return (
         <div>
             <div className="card bg-base-100 shadow-sm">
@@ -27,7 +38,9 @@ const PackageCard = ({ pkg }) => {
                         <li className='flex gap-2 items-center'><FaCheck />{pkg.features[2]}</li>
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary btn-block rounded-3xl">Buy Now</button>
+                        <button className={`btn btn-primary btn-block rounded-3xl ${selected ? 'bg-green-500 hover:bg-green-600 border-0' : ''} `} onClick={handleAddToCart}>
+                            {selected ? 'Added to Cart' : 'Buy Now'}
+                        </button>
                     </div>
                 </div>
             </div>

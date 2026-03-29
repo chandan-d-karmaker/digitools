@@ -3,9 +3,10 @@ import DisplayCards from './DisplayCards';
 import { useState } from 'react';
 import Cart from './cart';
 
-const ToolCards = ({packagePromise}) => {
+const ToolCards = ({packagePromise, cartItems, setCartItems}) => {
 
     const [actvBtn, setActvBtn] = useState('products');
+    
 
     const handleProductTab = () => {
         setActvBtn('products');
@@ -29,13 +30,13 @@ const ToolCards = ({packagePromise}) => {
                 <div className='flex justify-center mb-10'>
                     <div className='rounded-full p-2 border border-[#F6F6F6] inline-flex justify-center'>
                         <button className={`btn border-0  ${actvBtn === 'products' ? 'btn-primary shadow-sm' : 'bg-base-100 btn-ghost shadow-none'} rounded-full`} onClick={()=> handleProductTab()}>Products</button>
-                        <button className={`btn border-0 ${actvBtn === 'cart' ? 'btn-primary shadow-sm' : 'bg-base-100 btn-ghost shadow-none'} rounded-full`} onClick={()=> handleCartTab()}>Cart (0)</button>
+                        <button className={`btn border-0 ${actvBtn === 'cart' ? 'btn-primary shadow-sm' : 'bg-base-100 btn-ghost shadow-none'} rounded-full`} onClick={()=> handleCartTab()}>Cart ({cartItems.length})</button>
                     </div>
                 </div>
             </div>
 
             {
-                actvBtn === 'products' ? <DisplayCards packagePromise={packagePromise} /> : <Cart/>
+                actvBtn === 'products' ? <DisplayCards packagePromise={packagePromise} cartItems={cartItems} setCartItems={setCartItems} /> : <Cart cartItems={cartItems} setCartItems={setCartItems}/>
             }
 
         </div>
