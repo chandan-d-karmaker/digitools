@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "https://i.ibb.co.com/F4nzV1mH/camera.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Master",
+    "description": "Professional-grade vector tools and UI components for modern digital designers.",
+    "price": 199,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Lifetime updates",
+      "Commercial license",
+      "1,000+ UI elements"
+    ],
+    "icon": "https://i.ibb.co.com/BVsgTsYW/writing-2327400-1.png"
+  },
+  {
+    "id": 3,
+    "name": "CodeMate Pro",
+    "description": "An AI-powered pair programmer that helps you write cleaner code and debug faster.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Real-time autocomplete",
+      "Security vulnerability scans",
+      "VS Code extension"
+    ],
+    "icon": "https://i.ibb.co.com/VWZDP26w/social-media.png"
+  },
+  {
+    "id": 4,
+    "name": "Cloud Storage Plus",
+    "description": "Secure, encrypted cloud storage for teams and enterprises with high-speed transfer.",
+    "price": 120,
+    "period": "yearly",
+    "tag": "Value",
+    "tagType": "popular",
+    "features": [
+      "2TB Secure storage",
+      "File versioning",
+      "Admin control panel"
+    ],
+    "icon": "https://i.ibb.co.com/NdY87m0b/portfolio.png"
+  },
+  {
+    "id": 5,
+    "name": "SEO Rocket",
+    "description": "Dominate search rankings with real-time keyword tracking and competitor analysis.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "new",
+    "features": [
+      "Daily rank tracking",
+      "Backlink monitoring",
+      "Site audit reports"
+    ],
+    "icon": "https://i.ibb.co.com/nM4zYBzr/operation.png"
+  },
+  {
+    "id": 6,
+    "name": "Video Edit Studio",
+    "description": "Edit 4K videos in your browser with pro-level transitions and automated subtitles.",
+    "price": 250,
+    "period": "yearly",
+    "tag": "Pro Choice",
+    "tagType": "best seller",
+    "features": [
+      "4K Export quality",
+      "Stock footage library",
+      "AI Subtitle generator"
+    ],
+    "icon": "https://i.ibb.co.com/Y7FBdfPp/design-tool.png"
+  }
+]
+
