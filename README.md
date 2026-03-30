@@ -82,8 +82,6 @@ npm run dev
 digitools/
 ├── src/
 │   ├── components/  # Reusable UI components
-│   ├── pages/       # Individual tool pages (Calculator, Converter, etc.)
-│   ├── utils/       # Logic for conversions and math
 │   ├── App.jsx      # Main application logic
 │   └── main.jsx     # App entry point
 ├── public/          # Assets and icons
