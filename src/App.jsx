@@ -1,6 +1,6 @@
 import { Suspense, useState } from 'react'
 import './App.css'
-import Banner from './components/banner'
+import Banner from './components/Banner'
 import Info from './components/Info'
 import NavBar from './components/NavBar'
 import ToolCards from './components/ToolCards'

@@ -1,7 +1,7 @@
 import React from 'react';
 import Dot from '../assets/dot-icon.svg';
 import { IoPlayOutline } from "react-icons/io5";
-import banner from '../assets/banner.png'
+import banner from '../assets/banner.png';
 
 const Banner = () => {
     return (
@@ -9,11 +9,13 @@ const Banner = () => {
 
             {/* left side */}
             <div className='space-y-5 flex flex-col justify-center'>
-                <div className="inline-flex items-center gap-2 bg-[#E1E7FF] text-blue-600 text-[16px] font-medium px-4 py-2 rounded-full">
-                    <span><img src={Dot} alt="Dot" /></span>
-                    <span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>
-                        New: AI-Powered Tools Available
-                    </span>
+                <div>
+                    <div className='justify-center items-center gap-2 inline-flex rounded-full bg-[#E1E7FF] text-blue-600 text-     [16px] font-medium px-4 py-2'>
+                        <span><img src={Dot} alt="Dot" /></span>
+                        <span className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>
+                            New: AI-Powered Tools Available
+                        </span>
+                    </div>
                 </div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-[#101727]">
                     Supercharge Your <br />Digital Workflow</h1>
@@ -30,7 +32,7 @@ const Banner = () => {
                     <button className="btn btn-outline rounded-full font-bold group flex items-center gap-2 border border-[#4F39F6] hover:bg-[#4F39F6] hover:text-white transition text-[16px] text-blue-500">
                         <span className="group-hover:translate-x-1 transition"><IoPlayOutline /></span>
                         Watch Demo
-                        
+
                     </button>
                 </div>
             </div>

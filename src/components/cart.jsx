@@ -1,6 +1,7 @@
 import React from 'react';
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { MdDeleteOutline } from "react-icons/md";
+import CartCard from './CartCard';
 
 const Cart = ({ cartItems, setCartItems }) => {
 
@@ -21,21 +22,24 @@ const Cart = ({ cartItems, setCartItems }) => {
                         <p className='text-sm font-medium opacity-70'>Add some items to your cart to see them here.</p>
                     </div>
 
-                </div> : cartItems.map(item =>
-                    <div className='mb-5 key={item.id}'>
-                        <div className='flex justify-between items-center p-4 rounded-2xl border border-gray-300 space-y-5'>
-                            <div className='flex gap-5 justify-center items-center'>
-                                <div>
-                                    <img className='w-20 h-20 rounded-xl' src={item.icon} alt="" />
-                                </div>
-                                <div className='flex flex-col items-start justify-center space-x-4'>
-                                    <h3 className='text-xl font-semibold'>{item.name}</h3>
-                                    <h3>${item.price}</h3>
-                                </div>
-                            </div>
-                            <button className='btn btn-ghost' onClick={() => handleDeleteItem(item)}><MdDeleteOutline /></button>
-                        </div>
-                    </div>)
+                </div> : 
+                <div className='mb-5 p-10 shadow-sm rounded-lg w-4/5 mx-auto space-y-5 border-2 border-[#F2F2F2]'>
+
+                    <h2 className='text-3xl font-bold'>Your Cart</h2>
+                    {
+                        cartItems.map(item => <CartCard key={item.id} item={item} handleDeleteItem={handleDeleteItem} />)
+                    }
+
+                    <div className='flex justify-between items-center'>
+                        <p className='text-[16px] text-[#627382] '>Total:</p>
+                        <p className='text-2xl font-bold'>${cartItems.reduce((total, item) => total + (item.price), 0)}</p>
+                    </div>
+
+                    <button className='btn btn-primary w-full rounded-3xl'>Proceed to Checkout</button>
+
+                </div>
+
+
             }
         </div>
     );
