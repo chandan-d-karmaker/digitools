@@ -8,6 +8,7 @@ const Cart = ({ cartItems, setCartItems }) => {
     const handleDeleteItem = (item) => {
         const updatedCartItems = cartItems.filter(cartItem => cartItem.id !== item.id);
         setCartItems(updatedCartItems);
+        toast.success(`${item.name} removed from cart.`);
     }
 
     const handleProceedToCheckout = () => {
