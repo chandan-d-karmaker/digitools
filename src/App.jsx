@@ -8,6 +8,7 @@ import GetStarted from './components/GetStarted'
 import Pricing from './components/Pricing'
 import Transform from './components/Transform'
 import { ToastContainer } from 'react-toastify'
+import Footer from './components/footer'
 
 const packages = async () => {
   const response = await fetch('/packages.json');
@@ -43,6 +44,7 @@ function App() {
       <Pricing pricesPromise={pricesPromise}/>
 
       <Transform />
+      <Footer/>
 
       <ToastContainer/>
     </>
