@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import ToolCards from './components/ToolCards'
 import GetStarted from './components/GetStarted'
 import Pricing from './components/Pricing'
+import Transform from './components/Transform'
 
 const packages = async () => {
   const response = await fetch('/packages.json');
@@ -39,6 +40,8 @@ function App() {
 
       <GetStarted/>
       <Pricing pricesPromise={pricesPromise}/>
+
+      <Transform />
 
 
     </>
