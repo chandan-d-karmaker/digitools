@@ -4,8 +4,8 @@ import { LuShoppingCart } from "react-icons/lu";
 
 const NavBar = ({ cartItems }) => {
     return (
-        <div>
-            <div className="navbar bg-base-100 shadow-sm">
+        <div className='shadow-sm'>
+            <div className="navbar bg-base-100  w-4/5 mx-auto">
                 <div className="navbar-start flex items-center gap-2">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
