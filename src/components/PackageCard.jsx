@@ -1,14 +1,23 @@
 import React, { useState } from 'react';
 import { FaCheck } from "react-icons/fa";
+import { toast } from 'react-toastify';
+
 
 const PackageCard = ({ pkg, cartItems, setCartItems }) => {
 
     const [selected, setSelected] = useState(false);
 
     const handleAddToCart = () => {
+        if (cartItems.includes(pkg)) {
+            toast.info(`${pkg.name} is already in the cart!`);
+            return;
+        }
         if (!selected) {
+
             setCartItems([...cartItems, pkg]);
             setSelected(true);
+            toast.success(`${pkg.name} added to cart!`);
+
         }
     };
 

@@ -8,7 +8,7 @@ const PriceCard = ({ price }) => {
                 <div className={`card-body `}>
 
                     {price.isFeatured && (
-                        <span className="badge badge-md badge-warning absolute -top-2 right-37 bg-[#FEF3C6] text-[#BB4D00]">{ price.tag }</span>
+                        <span className="badge badge-md absolute -top-2 left-1/2 -translate-x-13 bg-[#FEF3C6] text-[#BB4D00]">{ price.tag }</span>
                     )}
 
                     <div className="">

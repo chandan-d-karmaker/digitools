@@ -7,6 +7,7 @@ import ToolCards from './components/ToolCards'
 import GetStarted from './components/GetStarted'
 import Pricing from './components/Pricing'
 import Transform from './components/Transform'
+import { ToastContainer } from 'react-toastify'
 
 const packages = async () => {
   const response = await fetch('/packages.json');
@@ -43,7 +44,7 @@ function App() {
 
       <Transform />
 
-
+      <ToastContainer/>
     </>
   )
 }
