@@ -1,7 +1,7 @@
 import React from 'react';
 import { RiShoppingCart2Line } from "react-icons/ri";
-import { MdDeleteOutline } from "react-icons/md";
 import CartCard from './CartCard';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cartItems, setCartItems }) => {
 
@@ -9,6 +9,13 @@ const Cart = ({ cartItems, setCartItems }) => {
         const updatedCartItems = cartItems.filter(cartItem => cartItem.id !== item.id);
         setCartItems(updatedCartItems);
     }
+
+    const handleProceedToCheckout = () => {
+        setCartItems([]);
+        toast.success('Checkout successful! Thank you for your purchase.');
+    }
+
+
 
 
     return (
@@ -35,7 +42,7 @@ const Cart = ({ cartItems, setCartItems }) => {
                         <p className='text-2xl font-bold'>${cartItems.reduce((total, item) => total + (item.price), 0)}</p>
                     </div>
 
-                    <button className='btn btn-primary w-full rounded-3xl'>Proceed to Checkout</button>
+                    <button className='btn btn-primary w-full rounded-3xl' onClick={handleProceedToCheckout}>Proceed to Checkout</button>
 
                 </div>
 
