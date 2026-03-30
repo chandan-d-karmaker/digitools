@@ -4,9 +4,7 @@ import Banner from './components/Banner'
 import Info from './components/Info'
 import NavBar from './components/NavBar'
 import ToolCards from './components/ToolCards'
-import Cart from './components/cart'
-import PackageCard from './components/PackageCard'
-import DisplayCards from './components/DisplayCards'
+import GetStarted from './components/GetStarted'
 
 const packages = async () => {
   const response = await fetch('/packages.json');
@@ -30,6 +28,8 @@ function App() {
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
         <ToolCards packagePromise={packagePromise} cartItems={cartItems} setCartItems={setCartItems} />
       </Suspense>
+
+      <GetStarted/>
 
 
     </>
