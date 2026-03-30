@@ -54,7 +54,7 @@ Optimized for speed with lightweight architecture.
 
 ## 🔗 Live Demo
 
-👉 https://digitools-ck.netlify.app/
+👉 https://digitools-eh.netlify.app/
 
 ---
 
