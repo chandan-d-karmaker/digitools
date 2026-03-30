@@ -6,12 +6,12 @@ const Footer = () => {
         <div className='bg-[#101727] pt-28 pb-8 space-y-20'>
 
             <div className='w-4/5 mx-auto text-white'>
-                <div className='flex justify-between'>
-                    <div>
+                <div className='flex flex-col space-y-5 md:flex-row justify-between'>
+                    <div className='flex flex-col items-center text-center md:text-start md:items-start'>
                         <h1 className='text-4xl font-bold text-white mb-4'>DigiTools</h1>
                         <p className='opacity-80 max-w-sm'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                     </div>
-                    <div className='flex justify-between gap-20'>
+                    <div className='flex flex-col items-center text-center md:flex-row md:text-start justify-between gap-20'>
                         <div className='space-y-4'>
                             <h1>Product</h1>
                             <ul className='space-y-2 opacity-80'>
@@ -42,9 +42,9 @@ const Footer = () => {
 
                     </div>
 
-                    <div className='space-y-4'>
+                    <div className='space-y-4 text-center md:text-left'>
                         <h1>Social Links</h1>
-                        <div className='flex gap-2'>
+                        <div className='flex gap-2 flex-row justify-center md:justify-start text-2xl'>
                             <FaInstagramSquare />
                             <FaFacebookSquare />
                             <FaTwitterSquare />
