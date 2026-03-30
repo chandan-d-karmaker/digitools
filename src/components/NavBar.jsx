@@ -19,6 +19,7 @@ const NavBar = ({ cartItems }) => {
                             <li><a className='font-semibold'>Pricing</a></li>
                             <li><a className='font-semibold'>Testimonials</a></li>
                             <li><a className='font-semibold'>FAQ</a></li>
+                            <li><a className='font-semibold'>Login</a></li>
                         </ul>
                     </div>
                     <div>
@@ -34,14 +35,14 @@ const NavBar = ({ cartItems }) => {
                         <li><a className='font-semibold'>FAQ</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end flex gap-4">
                     <a className='btn btn-ghost relative'>
                         <div className="absolute top-0 right-0 bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                             {cartItems.length}
                         </div>
                         <LuShoppingCart />
                     </a>
-                    <a className='btn btn-ghost'> Login</a>
+                    <a className='btn btn-ghost hidden md:flex'> Login</a>
                     <a className="btn btn-primary rounded-full font-semibold">Get Started</a>
                 </div>
             </div>
