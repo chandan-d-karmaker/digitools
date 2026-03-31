@@ -5,7 +5,7 @@ import banner from '../assets/banner.png';
 
 const Banner = () => {
     return (
-        <div className='w-4/5 mx-auto py-20 flex flex-col md:flex-row justify-between gap-10'>
+        <div className='w-4/5 mx-auto py-20 flex flex-col md:flex-row justify-between gap-7'>
 
             {/* left side */}
             <div className='space-y-5 flex flex-col justify-center'>
