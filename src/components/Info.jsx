@@ -16,7 +16,7 @@ const Info = () => {
                 <div className="divider md:divider-horizontal md:divider-neutral"></div>
                 <div className='mb-5 md:mb-0'>
                     <h2 className='font-bold text-6xl'>4.9</h2>
-                    <p className='text-2xl font-medium opacity-80'>Rating</p>
+                    <p className='text-2xl font-medium  opacity-80'>Rating</p>
                 </div>
             </div>
         </div>
