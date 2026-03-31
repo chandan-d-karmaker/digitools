@@ -11,9 +11,9 @@ const Footer = () => {
                         <h1 className='text-4xl font-bold text-white mb-4'>DigiTools</h1>
                         <p className='opacity-80 max-w-sm'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                     </div>
-                    <div className='flex flex-col items-center text-center md:flex-row md:text-start justify-between gap-20'>
+                    <div className='flex flex-col items-center text-center md:flex-row md:text-start justify-between gap-10'>
                         <div className='space-y-4'>
-                            <h1>Product</h1>
+                            <h1 className='font-semibold'>Product</h1>
                             <ul className='space-y-2 opacity-80'>
                                 <li><a href="">Features</a></li>
                                 <li><a href="">Pricing</a></li>
@@ -22,7 +22,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className='space-y-4'>
-                            <h1>Company</h1>
+                            <h1 className='font-semibold'>Company</h1>
                             <ul className='space-y-2 opacity-80'>
                                 <li><a href="">About</a></li>
                                 <li><a href="">Blog</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className='space-y-4'>
-                            <h1>Resources</h1>
+                            <h1 className='font-semibold'>Resources</h1>
                             <ul className='space-y-2 opacity-80'>
                                 <li><a href="">Documentation</a></li>
                                 <li><a href="">Help Center</a></li>
