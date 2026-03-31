@@ -22,7 +22,7 @@ const Cart = ({ cartItems, setCartItems }) => {
     return (
         <div>
             {
-                cartItems.length === 0 ? <div className='w-4/5 mx-auto shadow-sm p-5 rounded-lg space-y-10'>
+                cartItems.length === 0 ? <div className='md:w-4/5 mx-auto shadow-sm p-5 rounded-lg space-y-10'>
                     <h2 className='text-3xl font-bold'>Your Cart</h2>
                     <div className='text-center p-5'>
                         <span className='text-5xl flex items-center justify-center mb-5 opacity-50'><RiShoppingCart2Line /></span>
@@ -31,7 +31,7 @@ const Cart = ({ cartItems, setCartItems }) => {
                     </div>
 
                 </div> : 
-                <div className='mb-5 p-10 shadow-sm rounded-lg w-4/5 mx-auto space-y-5 border-2 border-[#F2F2F2]'>
+                <div className='mb-5 p-5 shadow-sm rounded-lg md:w-4/5 mx-auto space-y-5 border-2 border-[#F2F2F2]'>
 
                     <h2 className='text-3xl font-bold'>Your Cart</h2>
                     {
