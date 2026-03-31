@@ -8,7 +8,7 @@ const NavBar = ({ cartItems }) => {
             <div className="navbar bg-base-100">
                 <div className="navbar-start flex items-center gap-2">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-sm lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
                         <ul
@@ -35,7 +35,7 @@ const NavBar = ({ cartItems }) => {
                         <li><a className='font-semibold'>FAQ</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end flex gap-4">
+                <div className="navbar-end flex gap-1">
                     <a className='btn btn-ghost relative'>
                         <div className="absolute top-0 right-0 bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                             {cartItems.length}
